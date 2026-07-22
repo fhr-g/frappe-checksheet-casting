@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:item_number_infor",
+ "creation": "2026-07-16 10:02:57.588995",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_number_baan",
+  "column_break_8f1x",
+  "item_number_infor",
+  "section_break_e6mf",
+  "type",
+  "tebal_standard_section",
+  "tebal_grid_min",
+  "column_break_7psn",
+  "tebal_grid_standard",
+  "column_break_gtum",
+  "tebal_grid_max",
+  "lebar_standard_section",
+  "lebar_grid_min",
+  "column_break_dm9e",
+  "lebar_grid_standard",
+  "column_break_yew2",
+  "lebar_grid_max",
+  "berat_standard_section",
+  "berat_grid_min",
+  "column_break_udnb",
+  "berat_grid_standard",
+  "column_break_3o0w",
+  "berat_grid_max"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_number_baan",
+   "fieldtype": "Data",
+   "label": "Item Number Baan"
+  },
+  {
+   "fieldname": "column_break_8f1x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_number_infor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Number Infor",
+   "unique": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "tebal_grid_min",
+   "fieldtype": "Float",
+   "label": "Tebal Grid Min"
+  },
+  {
+   "fieldname": "tebal_grid_standard",
+   "fieldtype": "Float",
+   "label": "Tebal Grid Standard"
+  },
+  {
+   "fieldname": "tebal_grid_max",
+   "fieldtype": "Float",
+   "label": "Tebal Grid Max"
+  },
+  {
+   "fieldname": "section_break_e6mf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tebal_standard_section",
+   "fieldtype": "Section Break",
+   "label": "Tebal Standard"
+  },
+  {
+   "fieldname": "lebar_standard_section",
+   "fieldtype": "Section Break",
+   "label": "Lebar Standard"
+  },
+  {
+   "fieldname": "lebar_grid_min",
+   "fieldtype": "Float",
+   "label": "Lebar Grid Min"
+  },
+  {
+   "fieldname": "lebar_grid_standard",
+   "fieldtype": "Float",
+   "label": "Lebar Grid Standard"
+  },
+  {
+   "fieldname": "lebar_grid_max",
+   "fieldtype": "Float",
+   "label": "Lebar Grid Max"
+  },
+  {
+   "fieldname": "berat_standard_section",
+   "fieldtype": "Section Break",
+   "label": "Berat Standard"
+  },
+  {
+   "fieldname": "berat_grid_min",
+   "fieldtype": "Float",
+   "label": "Berat Grid Min"
+  },
+  {
+   "fieldname": "berat_grid_standard",
+   "fieldtype": "Float",
+   "label": "Berat Grid Standard"
+  },
+  {
+   "fieldname": "berat_grid_max",
+   "fieldtype": "Float",
+   "label": "Berat Grid Max"
+  },
+  {
+   "fieldname": "column_break_7psn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gtum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dm9e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yew2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_udnb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3o0w",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-16 10:16:34.920584",
+ "modified_by": "Administrator",
+ "module": "Gs Checksheet Casting",
+ "name": "Items",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

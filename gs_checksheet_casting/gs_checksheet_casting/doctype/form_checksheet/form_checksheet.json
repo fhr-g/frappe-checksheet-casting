@@ -1,0 +1,718 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "autoname": "CS-CASTING-.YYYY.-.#####",
+ "creation": "2026-07-15 13:43:33.347267",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "form_permintaan_tab",
+  "department",
+  "section",
+  "mesin",
+  "mold",
+  "br_column",
+  "product_type",
+  "jenis_pergantian_dari",
+  "ke",
+  "column_break_vqlb",
+  "alasan_permintaan_validasi",
+  "alasan_lainnya",
+  "section_break_xb9m",
+  "shift",
+  "column_break_cs2t",
+  "tanggal",
+  "column_break_b9d5",
+  "jam",
+  "section_break_kttj",
+  "final_judge",
+  "form_pengecekan_tab",
+  "tebal_grid_section",
+  "tebal_actual_1",
+  "tebal_actual_5",
+  "column_break_gfis",
+  "tebal_actual_2",
+  "tebal_actual_6",
+  "column_break_ckmr",
+  "tebal_actual_3",
+  "tebal_actual_7",
+  "column_break_spd8",
+  "tebal_actual_4",
+  "tebal_actual_8",
+  "column_break_ddcc",
+  "tebal_judge",
+  "ket_tebal",
+  "column_break_snzo",
+  "lebar_grid_section",
+  "lebar_actual_a",
+  "column_break_vnrn",
+  "lebar_actual_b",
+  "column_break_o2at",
+  "lebar_judge",
+  "ket_lebar",
+  "column_break_zbfx",
+  "berat_grid_section",
+  "column_break_dktw",
+  "berat_actual_1",
+  "berat_actual_6",
+  "column_break_lqjf",
+  "berat_actual_2",
+  "berat_actual_7",
+  "column_break_zxzb",
+  "berat_actual_3",
+  "berat_actual_8",
+  "column_break_l5ec",
+  "berat_actual_4",
+  "berat_actual_9",
+  "column_break_z67i",
+  "berat_actual_5",
+  "berat_actual_10",
+  "column_break_pgbs",
+  "berat_judge",
+  "ket_berat",
+  "column_break_fazc",
+  "tampilan_grid_section",
+  "tidak_retak__patah__rapuh",
+  "column_break_bi6y",
+  "ket_tidak_retak__patah__rapuh",
+  "section_break_cczb",
+  "tidak_putus_alurwire_bolong",
+  "column_break_awfl",
+  "ket_tidak_putus_alurwire_bolong",
+  "section_break_makz",
+  "timah_tidak_terisi_penuh",
+  "column_break_po5v",
+  "ket_timah_tidak_terisi_penuh",
+  "section_break_xecy",
+  "tidak_flashkelebihan_timah_di_framewire",
+  "column_break_ekee",
+  "ket_tidak_flashkelebihan_timah_di_framewire",
+  "section_break_85ls",
+  "tidak_berubah_bentukmiringbending",
+  "column_break_7r2k",
+  "ket_tidak_berubah_bentukmiringbending",
+  "section_break_ymsj",
+  "tidak_bolong_area_kupinglug",
+  "column_break_skbz",
+  "ket_tidak_bolong_area_kupinglug",
+  "section_break_szi2",
+  "tidak_tajam_area_kupinglug",
+  "column_break_tj2s",
+  "ket_tidak_tajam_area_kupinglug",
+  "tampilan_penguat_grid_mcb_section",
+  "penguat_grid_dalam_lurus",
+  "column_break_purk",
+  "ket_penguat_grid_dalam_lurus",
+  "standard_grid_tab",
+  "standar_tebal_min",
+  "standar_tebal_max",
+  "column_break_w0rw",
+  "standar_lebar_min",
+  "standar_lebar_max",
+  "column_break_frep",
+  "standar_berat_min",
+  "standar_berat_max"
+ ],
+ "fields": [
+  {
+   "default": "Produksi I",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Departemen",
+   "read_only": 1
+  },
+  {
+   "default": "Casting",
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Seksi",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tipe yang akan diproduksi",
+   "options": "Items"
+  },
+  {
+   "fieldname": "br_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mesin",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mesin",
+   "options": "Mesin"
+  },
+  {
+   "fieldname": "mold",
+   "fieldtype": "Data",
+   "label": "Mold"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "I (M)\nII (P)\nIII"
+  },
+  {
+   "fieldname": "alasan_permintaan_validasi",
+   "fieldtype": "Select",
+   "label": "Alasan Permintaan Validasi",
+   "options": "Pergantian Material\nPergantian Mold\nPengoperasian mesin lama\nPengoperasian mesin baru\nPengoperasian mesin setelah perbaikan\nLainnya"
+  },
+  {
+   "fieldname": "jenis_pergantian_dari",
+   "fieldtype": "Link",
+   "label": "Jenis Pergantian dari",
+   "options": "Items"
+  },
+  {
+   "fieldname": "ke",
+   "fieldtype": "Link",
+   "label": "Ke",
+   "options": "Items"
+  },
+  {
+   "fieldname": "alasan_lainnya",
+   "fieldtype": "Small Text",
+   "label": "Alasan Lainnya",
+   "mandatory_depends_on": "eval:doc.alasan_permintaan_validasi == \"Lainnya\";"
+  },
+  {
+   "fieldname": "column_break_vqlb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tebal_grid_section",
+   "fieldtype": "Section Break",
+   "label": "Tebal Grid"
+  },
+  {
+   "fieldname": "column_break_gfis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ckmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_spd8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tebal_actual_1",
+   "fieldtype": "Float",
+   "label": "Actual 1"
+  },
+  {
+   "fieldname": "tebal_actual_5",
+   "fieldtype": "Float",
+   "label": "Actual 5"
+  },
+  {
+   "fieldname": "tebal_actual_2",
+   "fieldtype": "Float",
+   "label": "Actual 2"
+  },
+  {
+   "fieldname": "tebal_actual_6",
+   "fieldtype": "Float",
+   "label": "Actual 6"
+  },
+  {
+   "fieldname": "tebal_actual_3",
+   "fieldtype": "Float",
+   "label": "Actual 3"
+  },
+  {
+   "fieldname": "tebal_actual_7",
+   "fieldtype": "Float",
+   "label": "Actual 7"
+  },
+  {
+   "fieldname": "tebal_actual_4",
+   "fieldtype": "Float",
+   "label": "Actual 4"
+  },
+  {
+   "fieldname": "tebal_actual_8",
+   "fieldtype": "Float",
+   "label": "Actual 8"
+  },
+  {
+   "fieldname": "lebar_grid_section",
+   "fieldtype": "Section Break",
+   "label": "Lebar Grid"
+  },
+  {
+   "fieldname": "lebar_actual_a",
+   "fieldtype": "Float",
+   "label": "Actual A"
+  },
+  {
+   "fieldname": "column_break_vnrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lebar_actual_b",
+   "fieldtype": "Float",
+   "label": "Actual B"
+  },
+  {
+   "fieldname": "berat_grid_section",
+   "fieldtype": "Section Break",
+   "label": "Berat Grid"
+  },
+  {
+   "fieldname": "berat_actual_1",
+   "fieldtype": "Float",
+   "label": "Actual 1"
+  },
+  {
+   "fieldname": "berat_actual_6",
+   "fieldtype": "Float",
+   "label": "Actual 6"
+  },
+  {
+   "fieldname": "column_break_lqjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "berat_actual_2",
+   "fieldtype": "Float",
+   "label": "Actual 2"
+  },
+  {
+   "fieldname": "berat_actual_7",
+   "fieldtype": "Float",
+   "label": "Actual 7"
+  },
+  {
+   "fieldname": "column_break_zxzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "berat_actual_3",
+   "fieldtype": "Float",
+   "label": "Actual 3"
+  },
+  {
+   "fieldname": "berat_actual_8",
+   "fieldtype": "Float",
+   "label": "Actual 8"
+  },
+  {
+   "fieldname": "column_break_l5ec",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "berat_actual_4",
+   "fieldtype": "Float",
+   "label": "Actual 4"
+  },
+  {
+   "fieldname": "berat_actual_9",
+   "fieldtype": "Float",
+   "label": "Actual 9"
+  },
+  {
+   "fieldname": "column_break_z67i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "berat_actual_5",
+   "fieldtype": "Float",
+   "label": "Actual 5"
+  },
+  {
+   "fieldname": "berat_actual_10",
+   "fieldtype": "Float",
+   "label": "Actual 10"
+  },
+  {
+   "fieldname": "form_permintaan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Form Permintaan"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state && doc.workflow_state != \"Draft\"",
+   "fieldname": "form_pengecekan_tab",
+   "fieldtype": "Tab Break",
+   "label": "Form Pengecekan"
+  },
+  {
+   "fieldname": "tampilan_grid_section",
+   "fieldtype": "Section Break",
+   "label": "Tampilan Grid"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_retak__patah__rapuh",
+   "fieldtype": "Select",
+   "label": "Tidak retak / patah / rapuh",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_putus_alurwire_bolong",
+   "fieldtype": "Select",
+   "label": "Tidak putus alur/wire (bolong)",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "description": "Frame utama, Sekitar kuping",
+   "fieldname": "timah_tidak_terisi_penuh",
+   "fieldtype": "Select",
+   "label": "Timah tidak terisi penuh",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_flashkelebihan_timah_di_framewire",
+   "fieldtype": "Select",
+   "label": "Tidak Flash/kelebihan timah di frame/wire",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_berubah_bentukmiringbending",
+   "fieldtype": "Select",
+   "label": "Tidak berubah bentuk/miring/bending",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_bolong_area_kupinglug",
+   "fieldtype": "Select",
+   "label": "Tidak bolong area kuping/lug",
+   "options": "OK\nNG"
+  },
+  {
+   "default": "OK",
+   "fieldname": "tidak_tajam_area_kupinglug",
+   "fieldtype": "Select",
+   "label": "Tidak tajam area kuping/Lug",
+   "options": "OK\nNG"
+  },
+  {
+   "fieldname": "tampilan_penguat_grid_mcb_section",
+   "fieldtype": "Section Break",
+   "label": "Tampilan Penguat Grid (MCB)"
+  },
+  {
+   "default": "OK",
+   "fieldname": "penguat_grid_dalam_lurus",
+   "fieldtype": "Select",
+   "label": "Penguat grid dalam lurus",
+   "options": "OK\nNG"
+  },
+  {
+   "fieldname": "standard_grid_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Standard Grid"
+  },
+  {
+   "fieldname": "standar_tebal_min",
+   "fieldtype": "Float",
+   "label": "Standar Tebal Min"
+  },
+  {
+   "fieldname": "standar_tebal_max",
+   "fieldtype": "Float",
+   "label": "Standar Tebal Max"
+  },
+  {
+   "fieldname": "standar_lebar_min",
+   "fieldtype": "Float",
+   "label": "Standar Lebar Min"
+  },
+  {
+   "fieldname": "standar_lebar_max",
+   "fieldtype": "Float",
+   "label": "Standar Lebar Max"
+  },
+  {
+   "fieldname": "standar_berat_min",
+   "fieldtype": "Float",
+   "label": "Standar Berat Min"
+  },
+  {
+   "fieldname": "standar_berat_max",
+   "fieldtype": "Float",
+   "label": "Standar Berat Max"
+  },
+  {
+   "fieldname": "column_break_w0rw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_frep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "Tanggal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xb9m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "jam",
+   "fieldtype": "Time",
+   "label": "Jam",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cs2t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_b9d5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_retak__patah__rapuh",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_bi6y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cczb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_awfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_putus_alurwire_bolong",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "section_break_makz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_po5v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_timah_tidak_terisi_penuh",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "section_break_xecy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ekee",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_85ls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7r2k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_berubah_bentukmiringbending",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "section_break_ymsj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_skbz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_bolong_area_kupinglug",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "section_break_szi2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tj2s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_tajam_area_kupinglug",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_purk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_penguat_grid_dalam_lurus",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_ddcc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tebal_judge",
+   "fieldtype": "Select",
+   "label": "Judge",
+   "options": "OK\nNG",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lebar_judge",
+   "fieldtype": "Select",
+   "label": "Judge",
+   "options": "OK\nNG",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_o2at",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "berat_judge",
+   "fieldtype": "Select",
+   "label": "Judge",
+   "options": "OK\nNG",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "column_break_pgbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tebal",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_snzo",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "ket_lebar",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "ket_berat",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "column_break_zbfx",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_fazc",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_dktw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ket_tidak_flashkelebihan_timah_di_framewire",
+   "fieldtype": "Small Text",
+   "label": "Keterangan"
+  },
+  {
+   "fieldname": "final_judge",
+   "fieldtype": "Select",
+   "label": "Final Judge",
+   "options": "OK\nNG",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_kttj",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 11:46:46.210828",
+ "modified_by": "Administrator",
+ "module": "Gs Checksheet Casting",
+ "name": "Form Checksheet",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Orange",
+   "title": "Draft"
+  },
+  {
+   "color": "Blue",
+   "title": "Menunggu Inspeksi"
+  },
+  {
+   "color": "Blue",
+   "title": "Menunggu Check"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Menunggu Disetujui"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Menunggu Diketahui"
+  },
+  {
+   "color": "Green",
+   "title": "Disetujui"
+  },
+  {
+   "color": "Red",
+   "title": "Ditolak"
+  }
+ ]
+}

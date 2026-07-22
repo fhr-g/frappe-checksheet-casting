@@ -167,6 +167,12 @@ app_license = "mit"
 # 	],
 # }
 
+scheduler_events = {
+	"hourly": [
+		"gs_checksheet_casting.api.sync_master_mesin"
+	]
+}
+
 # Testing
 # -------
 

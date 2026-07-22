@@ -1,0 +1,28 @@
+{
+ "app": "gs_checksheet_casting",
+ "creation": "2026-07-17 11:41:17.132860",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "file-search-corner",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Checksheet Casting",
+   "link_to": "Form Checksheet",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-17 11:43:31.338040",
+ "modified_by": "Administrator",
+ "module": "Gs Checksheet Casting",
+ "name": "Checksheet Casting",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Checksheet Casting"
+}
